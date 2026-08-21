@@ -1,7 +1,17 @@
 {
-  "private": true,
+  "name": "smogon-damage-calc",
+  "version": "0.11.0",
   "homepage": "https://calc.pokemonshowdown.com/",
   "repository": "github:smogon/damage-calc",
+  "main": "./calc/dist/index.js",
+  "types": "./calc/dist/index.d.ts",
+  "unpkg": "./calc/dist/production.min.js",
+  "exports": {
+    ".": {
+      "import": "./calc/dist/index.js",
+      "require": "./calc/dist/index.cjs"
+    }
+  },
   "license": "MIT",
   "devDependencies": {
     "eslint": "^8.57.0",
